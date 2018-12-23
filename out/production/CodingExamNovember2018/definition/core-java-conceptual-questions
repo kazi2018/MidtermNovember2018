@@ -1,14 +1,18 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A. A programming language is a formal language, which
+comprises a set of instructions used to produce various
+kinds of output. Programming languages are used in computer programming to
+create programs that implement specific algorithms
 What jdk contains or composed of and define each components?
 A.
 What is IDE?
-A.
+A. Integrated Development Environment
 What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
 what is class?
+It is blue print of an object.
 What is object?
 What is the entry point of an application?
 Why main is static?
