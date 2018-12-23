@@ -15,7 +15,7 @@ public class Factorial {
         System.out.println("Factorial of 5 by using Recursion: "+factorialRecursive(5));
         System.out.println("Factorial of 5 by using Iteration: "+factorialIterative(5));
             }
-
+            //factorial by using recursion
             public static int factorialRecursive(int n){
                 if(n <= 1){
                     return 1;
@@ -24,7 +24,7 @@ public class Factorial {
                     return n*factorialRecursive(n-1);
                 }
             }
-
+                //factorial by using iteration
             public static int factorialIterative(int n){
                 int result=1,i=1;
                 while(i<=n){
