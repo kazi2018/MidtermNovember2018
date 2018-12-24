@@ -29,10 +29,10 @@ System.out.println("Data is reading from the Table (tbl_primenumber) and display
 for(String st:lowestValue){
 System.out.println(st);
 }*/
-		int min = findLowest(array);
-		System.out.println(min);
+		int lowest = low(array);
+		System.out.println(lowest);
 	}
-	public static int findLowest(int[] array){
+	public static int low(int[] array){
 		for (int i = 0; i < array.length; i++) {
 			if(array[0]>array[i])
 				array[0] = array[i];
