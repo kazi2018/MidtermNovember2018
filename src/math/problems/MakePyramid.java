@@ -14,8 +14,8 @@ public class MakePyramid {
 
         */
 
-       for(int i=0;i<50;i++) {  // took 50 numbers for the size of the pyramid
-                    for(int j=0;j<50-i;j++) {
+       for(int i=0;i<10;i++) {  // took 10 numbers for the size of the pyramid
+                    for(int j=0;j<10-i;j++) {
                         System.out.print(" ");
                     }
 

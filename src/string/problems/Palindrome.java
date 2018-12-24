@@ -10,10 +10,12 @@ Palindrome. So write java code to check if a given String is Palindrome or not. 
         String word2 = "Dad";
         String word3 = "Madam";
         String word4 = "Safwan";
+        String word5 = "Kazi";
         checkPalindrome(word1);
         checkPalindrome(word2);
         checkPalindrome(word3);
         checkPalindrome(word4);
+        checkPalindrome(word5);
 
     }
     public static void checkPalindrome(String word) {
