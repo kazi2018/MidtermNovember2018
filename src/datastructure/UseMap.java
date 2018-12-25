@@ -13,20 +13,20 @@ public class UseMap {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
 		List<String> games = new ArrayList<>();
-		games.add("Uncharted");
-		games.add("Halo");
-		games.add("Legend of Zelda");
-		games.add("God of War");
+		games.add("Bolla");
+		games.add("Chicky");
+		games.add("Micky");
+		games.add("War of game");
 
 		List<String> dc = new ArrayList<>();
-		dc.add("Batman");
-		dc.add("Superman");
+		dc.add("tigerman");
+		dc.add("ironman");
 		dc.add("Green Lantern");
 		dc.add("Flash");
 
 
 		List<String> marvel = new ArrayList<>();
-		marvel.add("Captain America");
+		marvel.add("Leader");
 		marvel.add("Ironman");
 		marvel.add("Thor");
 		marvel.add("Hulk");

@@ -14,11 +14,11 @@ public class UseQueue {
 		Queue<String> q = new LinkedList<String>();
 
 		//Adding elements to the Queue
-		q.add("Orfatt");
-		q.add("Therion");
-		q.add("Riot");
-		q.add("Batman");
-		q.add("Captain America");
+		q.add("Safwan");
+		q.add("Sohag");
+		q.add("Jiot");
+		q.add("ironman");
+		q.add("Leader");
 
 		System.out.println("Elements in Queue:"+q);
 
