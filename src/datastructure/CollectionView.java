@@ -19,9 +19,9 @@ Map is created and inserted some data.Retrieve the Collection view of values pre
                 map.put(5, "San Jose");
                 map.put(6, "Seattle");
 
-                for(Map.Entry<Integer,String>st:map.entrySet()){
-                        System.out.println(st);
-                }
+
+                        System.out.println("Collection View: " +map.values());
+
 
         }
 
