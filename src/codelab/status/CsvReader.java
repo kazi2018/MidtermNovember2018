@@ -68,7 +68,7 @@ public class CsvReader {
             total+=tr.getNumberOfExercisesSolved();
         }
 
-        System.out.println("average number of problems solved by each student in the class is: "+total/size);
+        System.out.println("AVERAGE SCORE OF THE CLASS IS : "+total/size);
     }
 
 }
