@@ -9,8 +9,12 @@ what is the difference between the Array and ArrayList?
 what is LinkedList?
 How is an Array different from Linked List?
 what is queue?
+The Queue is used to insert elements at the end of the queue and removes from the beginning of the queue. It follows FIFO concept. The Java Queue supports all methods of Collection interface including insertion, deletion etc.
+ LinkedList, ArrayBlockingQueue and PriorityQueue are the most frequently used implementations
 what is stack?
-what is FIFO and LIFO?
+Stack is the amount of memory allocated to the objects in Java
+ in which the object that enters at last, will be removed first.That’s why it is known as LIFO or last in first out.
+what is FIFO and LIFO? First In and First out is FIFO. Last in First Out is LIFO
 what is the order of complexity?
 what is the best case to search an element from an array?
 what is the worst case to search an element from an array?
