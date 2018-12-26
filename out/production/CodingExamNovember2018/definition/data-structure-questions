@@ -1,41 +1,286 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
+Programs are comprised of two things:  data and algorithms.  The algorithms describe the way the data is to be transformed.  The reason for learning about data structures is because adding structure to our data can make the algorithms much simpler, easier to maintain, and often faster.
+
 A.
 What are the various operations that can be performed on different Data Structures?
+
+The basic operations that are performed on data structures are as follows:
+
+Insertion:Insertion means addition of a new data element in a data structure.
+
+Deletion: Deletion means removal of a data element from a data structure if it is found.
+
+Searching:Searching involves searching for the specified data element in a data structure.
+
+Traversal:Traversal of a data structure means processing all the data elements present in it.
+
+Sorting:Arranging data elements of a data structure in a specified order is called sorting.
+
+Merging:Combining elements of two similar data structures to form a new data structure of the same type, is called merging.
+
+
 List out the areas in which data structures are applied extensively?
+
+The name of areas are:
+
+· Compiler Design,
+
+· Operating System,
+
+· Database Management System,
+
+· Statistical analysis package,
+
+· Numerical Analysis.
+
+
 what is an Array?
+An array is a data structure that contains a group of elements. Typically, these elements are all of the same data type, such as an integer or string. Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+A statically-created array will be on the stack or in the .data / .bss sections of your binary. A dynamically-created array (with new or malloc ) will be allocated on the heap. First, you pointer has to be of type int. An array is just a group of integer, saved in the memory as single integer, but in one row
+
 what is the difference between the Array and ArrayList?
+Array is used to hold multiple values of same type.
+Just like a standard array, ArrayList is also used to store similar elements.
+In the case of a standard array, we must declare its size before we use it and once its size is declared, it's fixed.
+While ArrayList is like a dynamic array i.e. we don't need to declare its size, it grows as we add elements to it and it shrinks as you remove elements from it, during the runtime of the program.
+Array is a fixed length data structure while ArrayList is a variable length Collection class.
+We can not store primitives in ArrayList, it can only contain Objects. While Array can contain both primitives and Objects in Java.
+
 what is LinkedList?
+Java LinkedList class uses a doubly linked list to store the elements. It provides a linked-list data structure. It inherits the AbstractList class and implements List and Deque interfaces.
+
+The important points about Java LinkedList are:
+
+Java LinkedList class can contain duplicate elements.
+Java LinkedList class maintains insertion order.
+Java LinkedList class is non synchronized.
+In Java LinkedList class, manipulation is fast because no shifting needs to occur.
+Java LinkedList class can be used as a list, stack or queue.
+
+
 How is an Array different from Linked List?
+1) ArrayList internally uses a dynamic array to store the elements.
+LinkedList internally uses a doubly linked list to store the elements.
+2) Manipulation with ArrayList is slow
+Manipulation with LinkedList is faster
+3) An ArrayList class can act as a list only because it implements List only.
+LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+4) ArrayList is better for storing and accessing data.
+LinkedList is better for manipulating data.
+
+
 what is queue?
+The Queue interface is available in java.util package and extends the Collection interface.
 The Queue is used to insert elements at the end of the queue and removes from the beginning of the queue. It follows FIFO concept. The Java Queue supports all methods of Collection interface including insertion, deletion etc.
- LinkedList, ArrayBlockingQueue and PriorityQueue are the most frequently used implementations
+
 what is stack?
-Stack is the amount of memory allocated to the objects in Java
- in which the object that enters at last, will be removed first.That’s why it is known as LIFO or last in first out.
-what is FIFO and LIFO? First In and First out is FIFO. Last in First Out is LIFO
+Java Stack memory is used for execution of a thread. They contain method specific values that are short-lived and references to other objects in the heap that are getting referred from the method. Stack memory is always referenced in LIFO (Last-In-First-Out) order.
+
+what is FIFO and LIFO?
+FIFO and LIFO are cost layering methods used to value the cost of goods sold and ending inventory.
+
+FIFO is a contraction of the term "first in, first out," and means that the goods first added to inventory are assumed to be the first goods removed from inventory for sale.
+The key part of the behavior of a Queue.
+
+LIFO is a contraction of the term "last in, first out," and means that the goods last added to inventory are assumed to be the first goods removed from inventory for sale.
+The key part of the behavior of a stack, due to the nature of push and pop, is the “Last In First Out”, or LIFO, principle.
+
+
+
 what is the order of complexity?
+The order of complexityis a certain mathematical expression of the size of the input, and the algorithm finishes between two factors of it. Generally, the smaller the order of complexity of the program's underlying algorithm, the faster it will run and the better it will scale as the input gets larger.
+
 what is the best case to search an element from an array?
+The best case running time of an algorithm is the function defined by the
+minimum number of steps taken on any instance of size.
+
 what is the worst case to search an element from an array?
+The worst case running time of an algorithm is the function defined by
+the maximum number of steps taken on any instance of size n
+
 what is tree in data structure?
+A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the root and zero or one or more subtrees.
+
 what is graph in data structure?
+A Graph is a non-linear data structure consisting of nodes and edges.
+
 what is the difference between the HashTable and HashMap?
+Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+
+Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+
+One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.
+
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+The major data structures used are as follows:
+RDBMS – Array (i.e. Array of structures)
+Network data model – Graph
+Hierarchical data model – Trees
+
+
 How HashMap works in java?
+HashMap works on the principle of hashing, we have put(key, value) and get(key) method for storing and retrieving Objects from HashMap. When we pass Key and Value object  to put() method on Java HashMap, HashMap implementation calls hashCode method on Key object and applies returned hashcode into its own hashing function to find a bucket location for storing Entry object, important point to mention is that HashMap in Java stores both key and value object as Map.Entry in a bucket which is essential to understand the retrieving logic.
+
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+ArrayIndexOutOfBoundsException is thrown to indicate that we are trying to access array element with an illegal index. This exception is thrown when the index is either negative or greater than or equal to the size of the array.
+
+
 What are the different ways of copying an array into another array?
+Object.clone(): Object class provides clone() method and since array in java is also an Object, you can use this method to achieve full array copy. This method will not suit you if you want partial copy of the array.
+
+System.arraycopy(): System class arraycopy() is the best way to do partial copy of an array. It provides you an easy way to specify the total number of elements to copy and the source and destination array index positions. For example System.arraycopy(source, 3, destination, 2, 5) will copy 5 elements from source to destination, beginning from 3rd index of source to 2nd index of destination.
+
+Arrays.copyOf(): If you want to copy first few elements of an array or full copy of array, you can use this method. Obviously it’s not versatile like System.arraycopy() but it’s also not confusing and easy to use.
+
+Arrays.copyOfRange(): If you want few elements of an array to be copied, where starting index is not 0, you can use this method to copy partial array.
+
+
 What is difference between an array and a linked list?
+Key Differences Between Array and Linked List
+1. An array is the data structure contains a collection of similar type data elements whereas the Linked list is considered as non-primitive data structure contains a collection of unordered linked elements known as nodes.
+
+2. In the array the elements belong to indexes, i.e., if you want to get into the fourth element you have to write the variable name with its index or location within the square bracket.
+
+3. In a linked list though, you have to start from the head and work your way through until you get to the fourth element.
+
+4. While accessing an element array is fast while Linked list takes linear time so, it is quite bit slower.
+
+5. Operations like insertion and deletion in arrays consume a lot of time. On the other hand, the performance of these operations in Linked lists is fast.
+
+6. Arrays are of fixed size. In contrast, Linked lists are dynamic and flexible and can expand and contract its size.
+
+7. In an array, memory is assigned during compile time while in a Linked list it is allocated during execution or runtime.
+
+9. Elements are stored consecutively in arrays whereas it is stored randomly in Linked lists.
+
+10. The requirement of memory is less due to actual data being stored within the index in the array. As against, there is a need for more memory in Linked Lists due to storage of additional next and previous referencing elements.
+
+11. In addition memory utilization is inefficient in the array. Conversely, memory utilization is efficient in the array.
+
+
 What is DFS and BFS?
+The breadth first search (BFS) and the depth first search (DFS) are the two algorithms used for traversing and searching a node in a graph. They can also be used to find out whether a node is reachable from a given node or not.
+
 What is Recursion?
+Recursion is a basic programming technique use in Java, in which a method calls itself to solve some problem. A method that uses this technique is recursive. Many programming problems can be solved only by recursion, and some problems that can be solved by other techniques are better solved by recursion.
+
 What are linear and non linear data Structures?
+A data structure is said to be linear if its elements form a sequence or a linear list. Examples: Array.
+
+A non-linear data structure is a data structure in which a data item is connected to several other data items. So that a given data item has the possibility to reach one-or-more data items. Examples of non-linear data-structures are Graphs and Trees.
+However Linked List and Arrays are linear data structures.
+
+
 What is Big-(O)-notation?
+Big O notation is the language we use for talking about how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem.
+
+Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+Let's break that down:
+
+>>How quickly the runtime grows—
+It's hard to pin down the exact runtime of an algorithm. It depends on the speed of the processor, what else the computer is running, etc. So instead of talking about the runtime directly, we use big O notation to talk about how quickly the runtime grows.
+
+>>Relative to the input—
+If we were measuring our runtime directly, we could express our speed in seconds. Since we're measuring how quickly our runtime grows, we need to express our speed in terms of...something else. With Big O notation, we use the size of the input, which we call "nn." So we can say things like the runtime grows "on the order of the size of the input" (O(n)O(n)) or "on the order of the square of the size of the input" (O(n^2)O(n
+​
+
+>>As the input gets arbitrarily large—
+Our algorithm may have steps that seem expensive when nn is small but are eclipsed eventually by other steps as nn gets huge. For big O analysis, we care most about the stuff that grows fastest as the input grows, because everything else is quickly eclipsed as nn gets very large. (If you know what an asymptote is, you might see why "big O analysis" is sometimes called "asymptotic analysis.")
+
+
 Outlined different kind of sorting algorithm with time complexity?
+
+Algorithm	Time Complexity
+                Best	        Average	        Worst
+Selection Sort	Ω(n^2)	        θ(n^2)	        O(n^2)
+Bubble Sort	Ω(n)	        θ(n^2)	        O(n^2)
+Insertion Sort	Ω(n)	        θ(n^2)	        O(n^2)
+Heap Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))
+Quick Sort	Ω(n log(n))	θ(n log(n))	O(n^2)
+Merge Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))
+Bucket Sort	Ω(n+k)	θ(n+k)	O(n^2)
+Radix Sort	Ω(nk)	θ(nk)	O(nk)
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+
+
+Pros and cons of different data structures
+Arrays -
+Pros:
+1. Access to an array element is fast since we can compute its location quickly.
+
+Cons:
+1. If we want to insert or delete an element, we have to shift subsequent elements which slows our computation down.
+2. We need a large enough block of memory to hold our array.
+3. Easily corrupted (One can easily inset data in middle)
+
+
+Linked Lists -
+Pros:
+1. Inserting and deleting data does not require us to move/shift subsequent data elements.
+
+Cons:
+1. If we want to access a specific element, we need to traverse the list from the head of the list to find it which can take longer than an array access.
+2. Linked lists require more memory.
+3. Easily corrupted (One can easily inset data in middle)
+
+
+Stack -
+Pros:
+1. Helps manage the data in particular way (LIFO) which is not possible with Linked list and array.
+2. When function is called the local varriables are stored in stack and destroyed once returned. Stack is used when varriable is not used outside the function.
+So, it gives control over how memory is allocated and deallocated
+3. Stack frees you from the burden of remembering to cleanup(read delete) the object
+4. Not easily corrupted (No one can easily inset data in middle)
+
+Cons:
+1. Stack memory is limited.
+2. Creating too many objects on the stack will increase the chances of stack overflow
+3. Random access not possible
+
+
+Queue -
+Pros:
+1. Helps manage the data in particular way (FIFO). which is not possible with Linked list and array.
+2. Not easily corrupted (No one can easily inset data in middle)
+
+Cons:
+1. Random access not possible
+
+
+Tree -
+Pros:
+1. Searching is faster (with some ordering e.g., BST). we can search for a given key in moderate time (quicker than Linked List and slower than arrays).
+2. Insert/delete keys in moderate time (quicker than Arrays and slower than Unordered Linked Lists).
+
+Cons:
+1. High overhead
+2. Large waste of unused links
+3. Predetermined limit on number of a node’s children
+
+Heap -
+Pros:
+1. When the data in the variable is needed beyond the lifetime of the current function.
+2. It can offer the maximum memory an OS can provide
+
+Cons:
+1. You must make sure to free the memory when you are done
+
+Graph -
+Pros:
+1. Finding the path in efficient way
+
+Cons:
+1. High overhead
+2. Large waste of unused links
 
 
