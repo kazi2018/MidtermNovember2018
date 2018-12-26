@@ -1,15 +1,15 @@
 package datastructure;
 
-import java.awt.*;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
 public class DataReader {
-
 	public static void main(String[] args) {
 		/*
 		 * User API to read the below textFile and print to console.
@@ -26,53 +26,67 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
-
-		String textfile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
-
+		//String textFile = "/Users/mohammadsharkar/Desktop/MidtermNovember2018/src/data/self-driving-car";  //We can also copy the path.
+		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car"; //.txt deleted, then it works
 		FileReader fr = null;
 		BufferedReader br = null;
-		String line;
-		String store = "";
-
 		try {
-			fr = new FileReader("C:\\Users\\soin1\\Desktop\\.txt");
-
-
-		} catch (Exception e) {
-			System.out.println("System was not able to find attached file ");
+			fr = new FileReader(textFile);
+			System.out.println("FileReader find the following path: " + textFile + "\n");
+		} catch (FileNotFoundException e) {
+			//e.printStackTrace();
+			System.out.println("We couldn't find the file");
 		}
-
+		String data = "";
+		String store = "";
 		try {
 			br = new BufferedReader(fr);
-			while ((line = br.readLine()) != null) {
-				System.out.println(line);
-				store += line;
-
+			while ((data = br.readLine()) != null) {
+				store += data;
+				System.out.println(store);
 			}
-		} catch (Exception e) {
-			System.out.println("System was not able to read attached file ");
+		} catch (IOException e) {
+			//e.printStackTrace();
+			System.out.println("file did not open");
+		} finally {
+			if (fr != null) {
+				fr = null;
+			}
+			if (br != null) {
+				br = null;
+			}
 		}
-
 		String[] storeArray = store.split(" ");
+		List<String> storeList = new LinkedList<String>();
+		Stack<String> storeStack = new Stack<String>();
 
-		Stack<String> myStack = new Stack<String>();
-		List<String> myList = new LinkedList<String>();
 		for (String element : storeArray) {
-			myStack.add(element);
-			myStack.push(element);
+			storeList.add(element);
+			storeStack.push(element);  //push is used here
 		}
-		System.out.println("The LinkedList LIFO");
-		Iterator<String> it = myList.iterator();
-		while (it.hasNext()) {
-			System.out.println(it.next() + " ");
+		System.out.println("\nLinkedList FIFO:");
+		Iterator<String> itr = storeList.iterator();
+		while (itr.hasNext()) {
+			System.out.print(itr.next() + " ");
 		}
-		System.out.println(" The Stack LIFO");
 
-		while (!myStack.isEmpty()) {
-			System.out.println(myStack.pop() + " "); }
+		System.out.println("\n\nStack FILO:");
+//        		for (int k = 0; k<storeStack.size();k++){  //IF WE USE FOR LOOP
+//       			System.out.print(storeStack.pop()+ " ");
+//		}
+		while (!storeStack.isEmpty()) {
+			System.out.print(storeStack.pop() + " "); // Removes the object at the top of this stack and
+			// returns that object as the value of this function.,
+			// POP remove the item from the stack as - last in first out
+		}
 
+		System.out.println(storeStack.push("\n\nHello!"));  //Pushes an item onto the top of this stack.
+		System.out.println(storeStack.search("right"));      //Returns the 1-based position where an object is
+		// on this stack., TO FIND THE INDEX NUMBER WHERE IT IS DECLARED
+		System.out.println(storeStack.peek());                // Looks at the object at the top of this stack without
+		// removing it from the stack.
+
+		System.out.println(storeStack.empty());            //Tests if this stack is empty. //WHY?
 
 	}
-
 }
