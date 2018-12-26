@@ -10,6 +10,8 @@ what is LinkedList?
 How is an Array different from Linked List?
 what is queue?
 what is stack?
+Stack is the amount of memory allocated to the objects in Java
+ in which the object that enters at last, will be removed first.That’s why it is known as LIFO or last in first out.
 what is FIFO and LIFO? First In and First out is FIFO. Last in First Out is LIFO
 what is the order of complexity?
 what is the best case to search an element from an array?
