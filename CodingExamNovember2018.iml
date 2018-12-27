@@ -57,5 +57,15 @@
     <orderEntry type="library" name="java" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-8.0.13 (1)3" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-8.0.13 (1)" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.13 (1)1" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/PNTNY/mysql-connector-java-6.0.6-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
