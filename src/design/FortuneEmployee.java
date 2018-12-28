@@ -10,7 +10,7 @@ public class FortuneEmployee {
 	/**Demonstrate as many methods as possible
 	 * to use with proper business work flow.Think as a Software Architect, Product Designer and
 	 * as a Software Developer.(employee.info.system) package is given as an outline,you need to elaborate
-	 * more to design123 an application that will meet for fortune 500 Employee Information
+	 * more to design an application that will meet for fortune 500 Employee Information
 	 * Services.
 	 *
 	 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
@@ -18,37 +18,17 @@ public class FortuneEmployee {
 	 **/
 	public static void main(String[] args) {
 
-		EmployeeInfo info = new EmployeeInfo() {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
+		EmployeeInfo info = new EmployeeInfo();
 		info.CompProfile();
 
 
 
 		//KhabarBariRestaurant.khabarBariRestaurantinfo();//static method can be called by class or interface directly without instantiating it
 
-		EmployeeInfo dir = new EmployeeInfo(1164, "Harun-ur-Rashid,", "MGT Dept.,Khamar Bari Bronx & Jamaica,", 4000, 'M', true, 5) {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
-		KhabarBariRestaurant kbr= new KhabarBariRestaurant() {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
+		EmployeeInfo dir = new EmployeeInfo(1164, "Harun-ur-Rashid,","MGT Dept.,Khamar Bari Bronx & Jamaica,",4000,'M',true,5);
+		KhabarBariRestaurant kbr=new KhabarBariRestaurant();
 		kbr.khabarBariRestaurantinfo();
-		KhamarBariBronx kbb= new KhamarBariBronx() {
-			@Override
-			public void CompProfile() {
-
-			}
-		}; //obj created for Khamar Bari Bronx
+		KhamarBariBronx kbb=new KhamarBariBronx(); //obj created for Khamar Bari Bronx
 		kbb.KhamarBariBronxInfo();
 		kbb.KhamarBariJamaicainfo(); // Khamar Bari Bronx extends KhamarBariJamaica so can call it by kbb.
 		info.startUpBonus();
@@ -67,12 +47,7 @@ public class FortuneEmployee {
 		System.out.println("\nNow The calculation for Pension:\n");
 
 
-		EmployeeInfo emp1 = new EmployeeInfo("Kamrul", 2154565) {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
+		EmployeeInfo emp1 = new EmployeeInfo("Kamrul", 2154565);
 		emp1.setDepartment("Sales");
 		emp1.setMonthlySalary(5000);
 		emp1.calculateYearlySalary();
@@ -80,12 +55,7 @@ public class FortuneEmployee {
 		double bonus101 = emp1.calculateEmployeeYearlyBonus(emp1.getMonthlySalary(), (int) emp1.getPerformance());
 		emp1.calculateEmployeeMonthlyPension((int)emp1.getMonthlySalary());
 
-		EmployeeInfo emp2 = new EmployeeInfo("Mohammad Sharkar", 2188458) {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
+		EmployeeInfo emp2 = new EmployeeInfo("Mohammad Sharkar", 2188458);
 		emp2.setDepartment("MKT");
 		emp2.setMonthlySalary(6000);
 		emp2.calculateYearlySalary();
@@ -93,12 +63,7 @@ public class FortuneEmployee {
 		double bonus102 = emp2.calculateEmployeeYearlyBonus(emp2.getMonthlySalary(), (int) emp2.getPerformance());
 		emp2.calculateEmployeeMonthlyPension((int)emp2.getMonthlySalary());
 
-		EmployeeInfo emp3 = new EmployeeInfo("Sultana Razia", 2347865) {
-			@Override
-			public void CompProfile() {
-
-			}
-		};
+		EmployeeInfo emp3 = new EmployeeInfo("Sultana Razia", 2347865);
 		emp3.setDepartment("Accounting");
 		emp3.setMonthlySalary(4000);
 		emp3.calculateYearlySalary();

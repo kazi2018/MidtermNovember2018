@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public abstract class EmployeeInfo extends KhamarBari implements Employee {
+public class EmployeeInfo extends KhamarBari implements Employee{
 
 	/* Exception Handling is not used */
 
